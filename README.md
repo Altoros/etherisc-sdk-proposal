@@ -2,7 +2,7 @@
 
 ## Installation
 ```
-npm install https://github.com/kandrianov/Etherisk-SDK
+npm install https://github.com/Altoros/etherisk-sdk-proposal
 ```
 
 ## Usage
