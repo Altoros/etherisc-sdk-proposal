@@ -17,7 +17,7 @@ function log(message) {
   console.debug(message);
 }
 
-export default class Etherisk {
+export default class Etherisc {
   constructor({qpxApikey} = {}) {
     this.policies = [];
     this.contractAddress = '';

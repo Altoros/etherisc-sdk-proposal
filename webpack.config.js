@@ -3,7 +3,7 @@ const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 const path = require('path');
 const env  = require('yargs').argv.env;
 
-let libraryName = 'Etherisk-SDK';
+let libraryName = 'Etherisc-SDK';
 
 let plugins = [], outputFile;
 

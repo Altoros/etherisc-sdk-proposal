@@ -1,8 +1,8 @@
 {
-  "name": "Etherisk-SDK",
+  "name": "Etherisc-SDK",
   "version": "1.0.0",
-  "main": "lib/Etherisk-SDK.min.js",
-  "repository": "https://github.com/kandrianov/Etherisk-SDK",
+  "main": "lib/Etherisc-SDK.min.js",
+  "repository": "https://github.com/kandrianov/Etherisc-SDK",
   "license": "MIT",
   "scripts": {
     "build": "webpack --env build",
