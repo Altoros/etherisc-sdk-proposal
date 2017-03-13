@@ -85,6 +85,9 @@ etherisc.searchFlights(origin, destination, date)
 ## High-level architecture
 ![high-level architecture](/img/high-level.png)
 
+## Low-level architecture
+![low-level architecture](/img/low-level.png)
+
 ## Security risks / advisory when using etherisc-SDK as 3rd party javascript module
 1. Risk to lose control over changes to the application performed by 3rd party javascript. Advisory: use in-house script mirroring, sub-resource integrity (see below).
 2. Execution of unknown code, so this grants the 3rd party the same privileges that were granted to the client. Advisory: to be secure the host company must review the code for any vulnerabilities like XSS or malicious actions such as sending sensitive data from the DOM, use in-house script mirroring, sub-resource integrity, sandboxing (see below).
