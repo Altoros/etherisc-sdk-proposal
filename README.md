@@ -1,4 +1,4 @@
-# Etherisc-SDK prorosal
+# Etherisc-SDK proposal
 
 ## High-level architecture
 ![high-level architecture](/img/high-level.png)
