@@ -72,6 +72,8 @@ Exmaple - operator retains the money, and does NOT send it to the contract until
 Add a way to add a revocation function to revoke the policy (cancel), within X time before the flight and get a refund. This adds complexity, requirements for more security review considerations. 
 Its important to do a good user interface design, work with an operator and/or end-user (if possible),  to determine the best UI/UX (from end-users), and the best integration/business model/business rules that fit the operator the best. 
 
+![](/img/scheme.png)
+
 ## Roadmap
 
 #### v0.1 (120 - 200 hours)
