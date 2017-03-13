@@ -41,20 +41,27 @@
 - Security tests
 - Develop documentation
 
-#### v.0.4 (40 - 80 hours)
+### v0.4 (40-60 hours)
+- SDK integration with Neteller
+- SDK integration with Stripe
+- Unit/integration/e2e tests
+- Develop documentation
+
+#### v0.5 (40 - 80 hours)
 - Implement React Native Etherisc-SDK
 
-#### v.0.5 (40 - 80 hours)
+#### v0.6 (40 - 80 hours)
+   - Implement Raspberry Pi Etherisk-SDK
    - Implement API integration for ETH-USD/USD-ETH conversions 
    - Etherisc-SDK stabilization
 
-#### v.0.6 (160 hours)
+#### v0.7 (Estimate - TBD, most likely in the range of 40-160 hrs)
   - Implement PHP Etherisc-SDK
 
-#### v.0.7 (160 hours)
+#### v0.8 (Estimate - TBD, most likely in the range of 40-160 hrs)
    - Implement Android Etherisc-SDK
 
-#### v.0.8 (160 hours)
+#### v0.9 (Estimate - TBD, most likely in the range of 40-160 hrs)
    - Implement iOS Etherisc-SDK
 
 ## Security risks / advisory when using etherisc-SDK as 3rd party javascript module
