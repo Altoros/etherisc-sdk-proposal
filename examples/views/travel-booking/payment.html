@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/css/boot.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/flatpickr/dist/flatpickr.min.css">
+    <script src="https://unpkg.com/flatpickr"></script>
+
+    <script src="/scripts/main.js"></script>
+  </head>
+  <body class="tr">
+
+
+    <div class="layout">
+
+      <div class="tr-header -short">
+
+        <div class="tr-header__wrapper">
+
+          <div class="tr-header__logo">
+            <span>TOUR BOOKING</span>
+            <%- include('../icon', {icon: 'sunbed', className: 'tr-header__sunbed'}); %>
+          </div>
+
+
+        </div>
+      </div>
+
+
+      <div class="tr-search">
+        <div class="tr-search__wrapper">
+          <form>
+            <input class="tr-header__location" type="text" name="location" placeholder="Where do you want to go?" />
+            <input class="search-form__date" type="text" name="date" placeholder="Where" />
+            <input type="submit" name="submit" value="Search" />
+          </form>
+        </div>
+      </div>
+
+
+
+      <div class="tr-content">
+
+        <h1>Checkout</h1>
+
+
+          <div class="payment">
+            <form action="/travel-booking/success" method="post">
+
+              <h2>Who's traveling?</h2>
+
+              <div>
+                <label>First name:</label>
+                <input type="text" name="first_name" />
+              </div>
+
+              <div>
+                <label>Last name:</label>
+                <input type="text" name="last_name" />
+              </div>
+
+              <div>
+                <label>Phone number:</label>
+                <input type="text" name="phone" />
+              </div>
+
+
+              <div>
+                <p><b>Total: $2125</b></p>
+              </div>
+
+
+
+            </form>
+
+            <form action="/travel-booking/success" method="POST">
+                <script
+                  src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                  data-key="pk_test_mmv514u7btfloA1rIyp8xLNX"
+                  data-amount="212500"
+                  data-name="Travel booking"
+                  data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                  data-locale="auto">
+                </script>
+            </form><br /><br />
+          </div>
+
+      </div>
+
+    </div>
+
+
+  </body>
+</html>

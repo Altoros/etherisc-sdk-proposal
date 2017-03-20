@@ -1,0 +1,113 @@
+<doctype html>
+  <html>
+    <head>
+      <link rel="stylesheet" href="/css/boot.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+    <script src="https://unpkg.com/flatpickr"></script>
+
+      <script src="/scripts/main.js"></script>
+    </head>
+    <body class="ap">
+
+      <div class="layout">
+        <div class="ap-header">
+          <div class="ap-header__wrapper">
+
+            <div class="ap-header__top">
+              <div class="ap-header__logotype">
+                <span>BOOKING</span>
+                <%- include('../icon', {icon: 'guest', className: 'ap-header__guest'}); %>
+              </div>
+
+              <div class="ap-header__nav">
+                <ul>
+                  <li><a href="">Appartments</a></li>
+                  <li><a href="">Resorts</a></li>
+                  <li><a href="">Villas</a></li>
+                  <li><a href="">Hostels</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="ap-content">
+          <h2>Checkout</h2>
+
+          <div class="payment">
+            <form action="/apartment-booking/success" method="post">
+
+              <h2>Who's traveling?</h2>
+
+              <div>
+                <label>First name:</label>
+                <input type="text" name="first_name" />
+              </div>
+
+              <div>
+                <label>Last name:</label>
+                <input type="text" name="last_name" />
+              </div>
+
+              <div>
+                <label>Phone number:</label>
+                <input type="text" name="phone" />
+              </div>
+
+              <script
+          src="//localhost:3333/Etherisc-SDK.min.js"
+          data-only-premium="true"
+          class="etherisc-script"
+        >
+        </script>
+
+
+              <h2>Where should we send your confirmation</h2>
+
+              <div>
+                <label>Email address:</label>
+                <input type="text" name="email" />
+              </div>
+
+              <h2>How would you like to pay?</h2>
+
+              <div>
+                <label>Cardholder name:</label>
+                <input type="text" name="card_name" />
+              </div>
+
+              <div>
+                <label>Debit/Credit card number:</label>
+                <input type="text" name="card_number" />
+              </div>
+
+              <div>
+                <label>Expiration date:</label>
+                <input type="text" name="card_month" placeholder="Month" />
+                <input type="text" name="card_year" placeholder="Year" />
+              </div>
+
+              <div>
+                <label>Security code:</label>
+                <input type="text" name="cart_code" />
+              </div>
+
+              <div>
+                <input type="submit" name="submit" value="Complete booking" />
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </body>
+  </html>

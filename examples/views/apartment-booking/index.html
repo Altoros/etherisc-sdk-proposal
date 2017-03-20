@@ -1,0 +1,118 @@
+<doctype html>
+  <html>
+    <head>
+      <link rel="stylesheet" href="/css/boot.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+    <script src="https://unpkg.com/flatpickr"></script>
+
+      <script src="/scripts/main.js"></script>
+    </head>
+    <body class="ap">
+
+      <div class="layout">
+        <div class="ap-header">
+          <div class="ap-header__wrapper">
+
+            <div class="ap-header__top">
+              <div class="ap-header__logotype">
+                <span>BOOKING</span>
+                <%- include('../icon', {icon: 'guest', className: 'ap-header__guest'}); %>
+              </div>
+
+              <div class="ap-header__nav">
+                <ul>
+                  <li><a href="">Appartments</a></li>
+                  <li><a href="">Resorts</a></li>
+                  <li><a href="">Villas</a></li>
+                  <li><a href="">Hostels</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="ap-header__form">
+              <h1>Search apartments</h1>
+              <form>
+                <input class="ap-header__location" type="text" name="location" placeholder="Places that you could ever go (but you can try!)" />
+                <input class="search-form__date" type="text" name="date" placeholder="Select date" />
+                <input type="submit" name="submit" value="Show me apartments" />
+              </form>
+            </div>
+
+
+
+          </div>
+        </div>
+
+        <div class="ap-content">
+          <h2>Top apartment destinations</h2>
+
+
+          <div class="ap-list">
+
+            <div class="ap-list__item">
+              <img src="http://t-ec.bstatic.com/images/hotel/square200/246/24627549.jpg" />
+              <h3>Central Park Hotel</h3>
+              <div>Located less than 100 metres from Hyde Park, the Central Park Hotel is just a 2-minute walk from Queensway Underground Station.</div>
+              <div><b>Price: $196</b></div>
+              <a href="/apartment-booking/review">Book</a>
+            </div>
+
+
+            <div class="ap-list__item">
+              <img src="http://s-ec.bstatic.com/images/hotel/square200/253/25352657.jpg" />
+              <h3>Park Plaza Victoria</h3>
+              <div>Park Plaza Victoria Hotel features a modern spa, stylish cocktail bar and large luxury bedrooms.</div>
+              <div><b>Price: $180</b></div>
+              <a href="/apartment-booking/review">Book</a>
+            </div>
+
+
+
+            <div class="ap-list__item">
+              <img src="http://t-ec.bstatic.com/images/hotel/square200/199/19979828.jpg" />
+              <h3>Grand Royale</h3>
+              <div>Just 3 minutes' walk from Bayswater and Queensway Tube Stations and a 5-minute walk from Hyde Park, this 4-star hotel offers a 24-hour front desk and free broadband internet.</div>
+              <div><b>Price: $296</b></div>
+              <a href="/apartment-booking/review">Book</a>
+            </div>
+
+            <div class="ap-list__item">
+              <img src="http://t-ec.bstatic.com/images/hotel/square200/338/33818033.jpg" />
+              <h3>Strand Palace Hotel</h3>
+              <div>Welcoming guests since 1909, the Strand Palace Hotel is located in London’s West End within just 700 metres of the Adelphi and the Vaudeville theatres.</div>
+              <div><b>Price: $150</b></div>
+              <a href="/apartment-booking/review">Book</a>
+            </div>
+
+            <div class="ap-list__item">
+              <img src="http://s-ec.bstatic.com/images/hotel/square200/482/48277294.jpg" />
+              <h3>Paddington Court</h3>
+              <div>Only 300 meters from Paddington Train Station, Park Grand Paddington Court provides direct access to Hyde Park, the upscale Mayfair and Oxford Street.</div>
+              <div><b>Price: $250</b></div>
+              <a href="/apartment-booking/review">Book</a>
+            </div>
+
+            <div class="ap-list__item">
+              <img src="http://s-ec.bstatic.com/images/hotel/square200/683/68369319.jpg" />
+              <h3>Pembury Hotel</h3>
+              <div>Opposite Finsbury Park, less than 500 metres from Finsbury Park Station and a mile from the Emirates Stadium, this hotel offers free Wi-Fi and en suite rooms.</div>
+              <div><b>Price: $150</b></div>
+              <a href="/apartment-booking/review">Book</a>
+            </div>
+
+
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </body>
+  </html>

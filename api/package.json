@@ -1,0 +1,30 @@
+{
+  "name": "Etherisc-api-server",
+  "version": "0.0.0",
+  "description": "Etherisk API server",
+  "engines": {
+    "node": ">=7.6.0"
+  },
+  "scripts": {
+    "dev": "nodemon --exec babel-node server.js"
+  },
+  "keywords": [],
+  "author": "Konstantsin Andrianov (https://github.com/kandrianov)",
+  "license": "ISC",
+  "dependencies": {
+    "kcors": "next",
+    "koa": "^2.2.0",
+    "koa-body": "2",
+    "koa-pug": "^3.0.0-2",
+    "koa-router": "next",
+    "koa-send": "^3.3.0",
+    "request": "^2.81.0",
+    "stripe": "^4.15.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "nodemon": "^1.11.0"
+  }
+}

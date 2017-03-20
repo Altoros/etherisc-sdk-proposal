@@ -1,0 +1,85 @@
+.wrapper {
+  background: #e0e9f6;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.title {
+  margin: 0 0 10px 10px;
+}
+
+.selectionBox {
+  display: flex;
+}
+
+.part {
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.part select {
+  width: 100%;
+}
+
+.searchBox {
+  margin: 0 10px;
+}
+
+.flight {
+  background: #fff;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 6px;
+}
+
+.active {
+  background:#a6b7dd;
+  color: white;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 6px;
+}
+
+.ratingsBox {
+  margin: 10px;
+}
+
+.ratingsTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.ratingsTable th {
+  font-weight: bold;
+}
+
+.ratingsTable td, .ratingsTable th {
+  border: 1px solid #8298b1;
+  padding: 4px;
+}
+
+.policyBox {
+  margin: 10px;
+}
+
+.premium {
+  margin: 15px 0;
+}
+
+.card {
+  background: #edf0fa;
+  padding: 15px;
+}
+
+.apply {
+  color: green;
+  margin-top: 10px;
+  font-weight: bold
+}
+
+.caption {
+  font-weight: bold;
+  margin-bottom: 15px;
+  display: block;
+}

@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/css/boot.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/flatpickr/dist/flatpickr.min.css">
+    <script src="https://unpkg.com/flatpickr"></script>
+
+    <script src="/scripts/main.js"></script>
+  </head>
+  <body class="se">
+
+
+    <div class="se-layout">
+
+        <div class="se-header">
+          <div class="se-header__logo">
+            <span>CRUISE BOOKING</span>
+            <%- include('../icon', {icon: 'ship', className: 'se-header__ship'}); %>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="se-content -inner">
+          <div class="se-search">
+            <form>
+              <input class="se-header__location" type="text" name="location" placeholder="Destination" />
+              <input class="search-form__date" type="text" name="date" placeholder="Date" />
+              <input type="submit" name="submit" value="Search" />
+            </form>
+          </div>
+
+
+
+
+
+     <h1>Checkout</h1>
+
+          <div class="payment">
+            <form action="/cruise-booking/success" method="post">
+
+              <h2>Personal information</h2>
+
+              <div>
+                <label>First name:</label>
+                <input type="text" name="first_name" />
+              </div>
+
+              <div>
+                <label>Last name:</label>
+                <input type="text" name="last_name" />
+              </div>
+
+              <div>
+                <label>Phone number:</label>
+                <input type="text" name="phone" />
+              </div>
+
+
+              <h2>Where should we send your confirmation</h2>
+
+              <div>
+                <label>Email address:</label>
+                <input type="text" name="email" />
+              </div>
+
+              <h2>How would you like to pay?</h2>
+
+              <div>
+                <label>Cardholder name:</label>
+                <input type="text" name="card_name" />
+              </div>
+
+              <div>
+                <label>Debit/Credit card number:</label>
+                <input type="text" name="card_number" />
+              </div>
+
+              <div>
+                <label>Expiration date:</label>
+                <input type="text" name="card_month" placeholder="Month" />
+                <input type="text" name="card_year" placeholder="Year" />
+              </div>
+
+              <div>
+                <label>Security code:</label>
+                <input type="text" name="cart_code" />
+              </div>
+
+              <div>
+                <input type="submit" name="submit" value="Complete booking" />
+              </div>
+
+            </form>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+    <div>
+
+
+
+
+  </body>
+</html>

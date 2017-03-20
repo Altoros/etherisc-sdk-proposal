@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/css/boot.css" />
+  </head>
+  <body>
+    <div class="cases">
+      <h1>Segments:</h1>
+      <a class="cases__item" href="/flight-tickets">Flight tickets</a>
+      <a class="cases__item" href="/apartment-booking">Apartment booking</a>
+      <a class="cases__item" href="/travel-booking">Travel tour booking</a>
+      <a class="cases__item" href="/car-rental">Car rental</a>
+      <a class="cases__item" href="/cruise-booking">Cruise booking</a>
+      <a class="cases__item" href="https://renatco.github.io/etherisc-admin/" target="_blank">Travel agency</a>
+    </div>
+
+    <div class="usage">
+      <h2>Usage:</h2>
+
+
+
+
+      <h3>1. Standalone payment, online payment through payment system (PayPal/Stripe)</h3>
+      <xmp>
+        <script
+          src="//localhost:3333/Etherisc-SDK.min.js"
+          class="etherisc-script"
+          data-full="true"
+        ></script>
+      </xmp>
+
+
+
+
+      <h3>2. Standalone payment, partial integration to checkout page, final payment through payment system (Paypal/Stripe)</h3>
+      <p>a)</p>
+      <xmp>
+        <script
+          src="//localhost:3333/Etherisc-SDK.min.js"
+          data-only-premium="true"
+          class="etherisc-script"
+        >
+        </script>
+      </xmp>
+      <p>b)</p>
+      <xmp>
+        <script
+          src="//localhost:3333/Etherisc-SDK.min.js"
+          data-only-payment="true"
+          class="etherisc-script"
+        >
+        </script>
+      </xmp>
+
+
+      <h3>3. Integration with provided flight id</h3>
+      <xmp>
+        <script
+          src="//localhost:3333/Etherisc-SDK.min.js"
+          data-flight-id="AS1229"
+          class="etherisc-script"
+        >
+        </script>
+      </xmp>
+
+
+
+
+
+
+
+      <!--<h3>Policy status</h3>
+      <xmp>
+        <script
+          src="//localhost:3333/Etherisc-SDK.min.js"
+          data-user="userId"
+          class="etherisc-script"
+        >
+        </script>
+      </xmp>-->
+
+
+
+
+
+
+
+
+
+    </div>
+
+  </body>
+</html>

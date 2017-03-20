@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/css/boot.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/flatpickr/dist/flatpickr.min.css">
+    <script src="https://unpkg.com/flatpickr"></script>
+
+    <script src="/scripts/main.js"></script>
+  </head>
+  <body class="cr">
+
+    <div class="layout">
+
+      <div class="cr-header">
+        <div class="cr-header__wrapper">
+          <div class="cr-header__logo">
+            <span>CAR RENTAL</span>
+            <%- include('../icon', {icon: 'car', className: 'cr-header__car'}); %>
+          </div>
+        </div>
+      </div>
+
+      <div class="cr-promo">
+        <div class="cr-caption">
+          <h1>Car Hire – Search & Compare</h1>
+          <div>1 232 429 cars at over 58 000 locations</div>
+        </div>
+      </div>
+
+      <div class="cr-search">
+        <div class="cr-search__wrapper">
+          <h2>Search for Car Hire</h2>
+
+          <form>
+            <input class="cr-header__location" type="text" name="location" placeholder="Where do you want to go?" />
+            <input class="search-form__date" type="text" name="date" placeholder="Where" />
+            <input type="submit" name="submit" value="Search" />
+          </form>
+
+        </div>
+      </div>
+
+      <div class="cr-content">
+        <h2>Popular Cars</h2>
+      <div class="cr-list">
+
+        <div class="cr-list__item">
+          <div>
+            <img src="http://cdn.rcstatic.com/images/car_images/new_images/fiat/500_lrg.jpg"/>
+            <h3>Fiat 500</h3>
+            <p>4 Seats | 2 Doors | 2 Small bags</p>
+            <div>
+              Price for today: <b>$21</b>
+            </div>
+            <a href="/car-rental/review">Book Now</a>
+          </div>
+        </div>
+
+
+
+        <div class="cr-list__item">
+          <div>
+            <img src="http://cdn.rcstatic.com/images/car_images/new_images/fiat/panda_lrg.jpg"/>
+            <h3>Fiat Panda</h3>
+            <p>4 Seats | 2 Doors | 2 Small bags</p>
+            <div>
+              Price for today: <b>$30</b>
+            </div>
+            <a href="/car-rental/review">Book Now</a>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="cr-list__item">
+          <div>
+            <img src="http://cdn.rcstatic.com/images/car_images/new_images/ford/fusion_lrg.jpg"/>
+            <h3>Ford Fusion</h3>
+            <p>5 Seats | 4 Doors | 2 Large bags</p>
+            <div>
+              Price for today: <b>$32</b>
+            </div>
+            <a href="/car-rental/review">Book Now</a>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="cr-list__item">
+          <div>
+            <img src="http://cdn.rcstatic.com/images/car_images/new_images/lancia/ypsilon_lrg.jpg"/>
+            <h3>Lancia Y</h3>
+            <p>5 Seats | 4 Doors | 1 Large bag 1 Small bag</p>
+            <div>
+              Price for today: <b>$38</b>
+            </div>
+            <a href="/car-rental/review">Book Now</a>
+          </div>
+        </div>
+
+
+        <div class="cr-list__item">
+          <div>
+            <img src="http://cdn.rcstatic.com/images/car_images/new_images/volkswagen/golf_lrg.jpg"/>
+            <h3>Volkswagen Golf</h3>
+            <p>5 Seats | 4 Doors | 2 Large bags</p>
+            <div>
+              Price for today: <b>$47</b>
+            </div>
+            <a href="/car-rental/review">Book Now</a>
+          </div>
+        </div>
+
+
+        <div class="cr-list__item">
+          <div>
+            <img src="http://cdn.rcstatic.com/images/car_images/new_images/ford/mondeo_estate_lrg.jpg"/>
+            <h3>Lancia Y</h3>
+            <p>5 Seats | 4 Doors | 3 Large bags</p>
+            <div>
+              Price for today: <b>$46</b>
+            </div>
+            <a href="/car-rental/review">Book Now</a>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+      </div>
+      </div>
+
+
+
+
+
+    </div>
+
+  </body>
+</html>

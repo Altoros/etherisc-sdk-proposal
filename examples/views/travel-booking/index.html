@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/css/boot.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/flatpickr/dist/flatpickr.min.css">
+    <script src="https://unpkg.com/flatpickr"></script>
+
+    <script src="/scripts/main.js"></script>
+  </head>
+  <body class="tr">
+
+
+    <div class="layout">
+
+      <div class="tr-header">
+
+        <div class="tr-header__wrapper">
+
+          <div class="tr-header__logo">
+            <span>TOUR BOOKING</span>
+            <%- include('../icon', {icon: 'sunbed', className: 'tr-header__sunbed'}); %>
+          </div>
+
+          <div class="tr-header__description">
+            We open people's eyes to what's special outside of cities
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="tr-search">
+        <div class="tr-search__wrapper">
+          <form>
+            <input class="tr-header__location" type="text" name="location" placeholder="Where do you want to go?" />
+            <input class="search-form__date" type="text" name="date" placeholder="Where" />
+            <input type="submit" name="submit" value="Search" />
+          </form>
+        </div>
+      </div>
+
+
+
+      <div class="tr-content">
+
+        <h1>Popular trips</h1>
+
+        <div class="tr-list">
+
+          <div class="tr-list__item">
+            <div class="tr-list__pics">
+              <img src="http://cdn.tourradar.com/s3/tour/232x150/43444_d8912a9b.jpg" />
+              <img src="http://cdn.tourradar.com/s3/map/232x100/43444_6f53.png" />
+            </div>
+            <div class="tr-list__info">
+              <h2>Europe Explorer - 18 Days</h2>
+              <p><i>"Brcause of our tour leader, our group just 'clicked'. With the games we played on..."</i></p>
+              <table>
+                <tr><td><b>Destinations:</b></td><td>17 destinations in 8 countries</td></tr>
+                <tr><td><b>Age range:</b></td><td>10 to 75 years olds</td></tr>
+                <tr><td><b>Start/ends is:</b></td><td>London / London</td></tr>
+                <tr><td><b>Tour type:</b></td><td>Bus tour</td></tr>
+              </table>
+            </div>
+            <div class="tr-list__price">
+              <p><i>Price:</i></p>
+              <p><b>$2,125</b></p>
+              <hr />
+              <p><i>18 days</i></p>
+              <hr />
+              <a href="/travel-booking/review" class="tr-list__book">Book</a>
+            </div>
+          </div>
+
+
+
+
+          <div class="tr-list__item">
+            <div class="tr-list__pics">
+              <img src="http://cdn.tourradar.com/s3/tour/232x150/1462_c502fc.jpg" />
+              <img src="http://cdn.tourradar.com/s3/map/232x100/1462_11b1.png" />
+            </div>
+            <div class="tr-list__info">
+              <h2>Grand European</h2>
+              <p><i>"My tour was absolutely amazing. Right from the get go our tour guide, Krizsti Imre..."</i></p>
+              <table>
+                <tr><td><b>Destinations:</b></td><td>21 destinations in 8 countries</td></tr>
+                <tr><td><b>Age range:</b></td><td>10 to 39 years olds</td></tr>
+                <tr><td><b>Start/ends is:</b></td><td>London / London</td></tr>
+                <tr><td><b>Tour type:</b></td><td>Bus tour</td></tr>
+              </table>
+            </div>
+            <div class="tr-list__price">
+              <p><i>Price:</i></p>
+              <p><b>$2,825</b></p>
+              <hr />
+              <p><i>28 days</i></p>
+              <hr />
+              <a href="/travel-booking/review" class="tr-list__book">Book</a>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="tr-list__item">
+            <div class="tr-list__pics">
+              <img src="http://cdn.tourradar.com/s3/tour/232x150/14263_da44e9a6.jpg" />
+              <img src="http://cdn.tourradar.com/s3/map/232x100/43444_6f53.png" />
+            </div>
+            <div class="tr-list__info">
+              <h2>Europe Wonder</h2>
+              <p><i>"I did this tour in May with Kerryn as our Tour Guide and Terry as our Driver. Both..."</i></p>
+              <table>
+                <tr><td><b>Destinations:</b></td><td>11 destinations in 6 countries</td></tr>
+                <tr><td><b>Age range:</b></td><td>18 to 75 years olds</td></tr>
+                <tr><td><b>Start/ends is:</b></td><td>London / London</td></tr>
+                <tr><td><b>Tour type:</b></td><td>Bus tour</td></tr>
+              </table>
+            </div>
+            <div class="tr-list__price">
+              <p><i>Price:</i></p>
+              <p><b>$1,125</b></p>
+              <hr />
+              <p><i>11 days</i></p>
+              <hr />
+              <a href="/travel-booking/review" class="tr-list__book">Book</a>
+            </div>
+          </div>
+
+
+
+
+
+
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+
+  </body>
+</html>

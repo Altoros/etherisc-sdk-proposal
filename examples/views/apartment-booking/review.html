@@ -1,0 +1,65 @@
+<doctype html>
+  <html>
+    <head>
+      <link rel="stylesheet" href="/css/boot.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+    <script src="https://unpkg.com/flatpickr"></script>
+
+      <script src="/scripts/main.js"></script>
+    </head>
+    <body class="ap">
+
+      <div class="layout">
+        <div class="ap-header">
+          <div class="ap-header__wrapper">
+
+            <div class="ap-header__top">
+              <div class="ap-header__logotype">
+                <span>BOOKING</span>
+                <%- include('../icon', {icon: 'guest', className: 'ap-header__guest'}); %>
+              </div>
+
+              <div class="ap-header__nav">
+                <ul>
+                  <li><a href="">Appartments</a></li>
+                  <li><a href="">Resorts</a></li>
+                  <li><a href="">Villas</a></li>
+                  <li><a href="">Hostels</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="ap-content">
+          <h2>Central Park Hotel</h2>
+
+
+          <div class="ap-list">
+
+            <div class="ap-list__review">
+              <div>
+                <img src="http://t-ec.bstatic.com/images/hotel/square200/246/24627549.jpg" />
+              </div>
+              <div>
+                <div>Located less than 100 metres from Hyde Park, the Central Park Hotel is just a 2-minute walk from Queensway Underground Station.</div>
+                <div><b>Price: $196</b></div>
+              </div>
+            </div>
+
+            <a class="ap-checkout" href="/apartment-booking/payment">CONTINUE BOOKING</a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </body>
+  </html>

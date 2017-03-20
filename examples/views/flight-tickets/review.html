@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/css/boot.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/flatpickr/dist/flatpickr.min.css">
+    <script src="https://unpkg.com/flatpickr"></script>
+
+
+    <script src="/scripts/main.js"></script>
+
+
+  </head>
+  <body>
+
+    <div class="layout">
+
+
+
+
+      <div class="header">
+        <div class="header__wrapper">
+          <div class="header__logo">
+            <a href="/flight-tiockets">Flight Tickets</a>
+            <%- include('../icon', {icon: 'plane', className: 'header__plane'}); %>
+          </div>
+
+          <div class="header__description">
+            Find flights from 1000s of airlines
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="container">
+        <div class="container__wrapper">
+
+          <div class="review">
+            <h1>Review your trip</h1>
+
+              <div class="review__content">
+                <h2>AF1033</h2>
+                <p><b>From:</b> ATH, <b>to:</b> CDG</p>
+                <p><b>Dep.:</b> 2017-03-30 06:05+03:00; <b>Arr.:</b> 2017-03-30 08:35+02:00
+              </div>
+
+              <hr />
+
+              <div><b>Trip total: </b>$297</div>
+              <a class="review__continue" href="/flight-tickets/payment">Continue booking</a>
+
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+
+  </body>
+</html>
