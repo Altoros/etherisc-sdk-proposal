@@ -9,8 +9,8 @@ export default {
     apiKey: 'AIzaSyCfYPmq_eOR8fOvix8mDhyDksJWlm8f8Gc'
   },
   flightstats: {
-    addId: '3210002f',
-    appKey: 'bbeb9a75aff5a13b5c2e540f14c2ae68'
+    addId: '',
+    appKey: ''
   }
 }
 
