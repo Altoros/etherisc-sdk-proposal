@@ -31,7 +31,7 @@ https://renatco.github.io/etherisc-admin/ as a “base” layer for mockups UI c
     - Payment for policy includes to the common PayPal/Stripe bill
     - Host during the checkout creates a payout to Etherisc (PayPal/Stripe)
     - PayPal/Stripe after successful payment calls the webhook, this webhook creates a policy
-    - Host fetch policy from Etherisk to display for customer
+    - Host fetches policy from Etherisk to display for customer
 
 4. __Integration to host's checkout flow. Limitations: host website must have Stripe/PayPal account to make payouts to Etherisc.__  
 
@@ -40,7 +40,7 @@ https://renatco.github.io/etherisc-admin/ as a “base” layer for mockups UI c
     - Checkout flow with PayPal/Stripe
     - Host during the checkout creates a payout to Etherisc (PayPal/Stripe)
     - PayPal/Stripe after successful payment calls the webhook, this webhook creates a policy
-    - Host fetch policy from Etherisk to display for customer
+    - Host fetches policy from Etherisk to display for customer
 
 5. __Integration to host's checkout flow.__   
 
