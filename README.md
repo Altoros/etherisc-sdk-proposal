@@ -52,7 +52,7 @@
 - Implement React Native Etherisc-SDK
 
 #### v0.6 (40 - 80 hours)
-   - Implement Raspberry Pi Etherisk-SDK
+   - Implement Raspberry Pi Etherisc-SDK
    - Implement API integration for ETH-USD/USD-ETH conversions 
    - Etherisc-SDK stabilization
 
