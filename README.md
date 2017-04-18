@@ -3,65 +3,30 @@
 ## High-level architecture
 ![high-level architecture](/docs/img/scheme-02.png)
 
-### Apply for policy related operations explanation:
+## Brief roadmap
 
-1. Etherisc has a PalPal account with an insurance reserve for compensations payouts.
-2. Etherisc has Ethereum wallet with an  insurance reserve for compensations payouts + transaction reserve (master-wallet).
-3. User pays through his PayPal account, back-end API using web3 creates an Ethereum wallet for user. Transfer sum in ETH from master-wallet to user’s wallet for policy payment. Apply for policy - send premium from users’s wallet to master-wallet. Send back transaction hash.
-4. In case of insured event user receives PayPal Payout, send compensation from user’s Ethereum wallet back to master-wallet.
-5. Optionally it’s possible to export wallets’ private key to user, or send compensation to his another account.
+#### v0.1 Standalone 3rd party component  (208 hours)
+- Existing codebase refactoring
+- 3rd party standalone component
+- 3rd party "Сheck for policy" component
+- Etherisc API server
+- Etherisc examples
 
+#### v0.2 3rd party component with two-steps integration and binding to external input field for premium  (28 hours)
+- Two-steps integration 3rd party component
+- Implement 3rd party with binding to external input field for premium
 
+#### v0.3 3rd party component with multiple policies ordering (50 hours)
+- Additional UI components
 
-## Roadmap
-
-#### v0.1 (120 - 200 hours)
-- Implement Etherisc API server
-- SDK integration with Stripe
-- Implement Etherisc-SDK as 3rd party javascript module
-- Create demo applications for usage Etherisc-SDK 3rd party
-- Implement applyForPolicy flow
-- Implement applyForPolicy logic in Smart contract
-- Unit/integration/e2e tests
-- Develop documentation
-
-#### v0.2 (60 - 100 hours)
-- Implement Etherisc back-office administrator panel
-- Implement Etherisc-SDK as a javascript module with an interface to create client javascript or nodejs applications
-- Create simple demo applications: ReactJS, AngularJS, VueJS integrations
-- Unit/integration/e2e tests
-- Develop documentation
-
-#### v0.3 (50 - 80 hours)
-- Implement policy page UI
-- Implement compensation flow
-- Unit/integration/e2e tests
-- Security tests
-- Develop documentation
-
-### v0.4 (40-60 hours)
-- SDK integration with Neteller
-- SDK integration with PayPal
-- Unit/integration/e2e tests
-- Develop documentation
-
-#### v0.5 (40 - 80 hours)
-- Implement React Native Etherisc-SDK
-
-#### v0.6 (40 - 80 hours)
-   - Implement Raspberry Pi Etherisc-SDK
-   - Implement API integration for ETH-USD/USD-ETH conversions 
-   - Etherisc-SDK stabilization
-
-#### v0.7 (Estimate - TBD, most likely in the range of 40-160 hrs)
-  - Implement PHP Etherisc-SDK
-
-#### v0.8 (Estimate - TBD, most likely in the range of 40-160 hrs)
-   - Implement Android Etherisc-SDK
-
-#### v0.9 (Estimate - TBD, most likely in the range of 40-160 hrs)
-   - Implement iOS Etherisc-SDK
-
+#### v0.4 Backoffice (estimate - TBD, most likely in the range of 100-200 hrs)
+#### v0.5 NPM module (48 hours)
+#### v0.6 Integration with Neteller (16 hours)
+#### v0.7 React Native Etherisc-SDK (estimate - TBD, most likely in the range of 40-80 hrs)
+#### v0.8 Raspberry Pi Etherisc-SDK (estimate - TBD, most likely in the range of 40-80 hrs)
+#### v0.9 PHP Etherisc-SDK (estimate - TBD, most likely in the range of 40-160 hrs)
+#### v0.10 Android Etherisc-SDK (estimate - TBD, most likely in the range of 40-160 hrs)
+#### v0.11 iOS Etherisc-SDK (estimate - TBD, most likely in the range of 40-160 hrs)
 
 ## Security risks / advisory when using etherisc-SDK as 3rd party javascript module
 1. Risk to lose control over changes to the application performed by 3rd party javascript. Advisory: use in-house script mirroring, sub-resource integrity (see below).
