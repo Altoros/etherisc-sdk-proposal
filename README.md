@@ -1,10 +1,7 @@
 # Etherisc-SDK proposal
 
 ## High-level architecture
-![high-level architecture](/docs/img/high-level.png)
-
-## Low-level architecture
-![low-level architecture](/docs/img/low-level.png)
+![high-level architecture](/docs/img/scheme-02.png)
 
 ### Apply for policy related operations explanation:
 
